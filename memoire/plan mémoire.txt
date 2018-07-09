@@ -1,0 +1,62 @@
+Plan mémoire :
+--------------
+
+1 - Introduction
+	optimisation des paramètres de configurations des bases de données NoSql via des méthodes d'optimisation utlisant des familles d'algorithme différent.
+	Par exemple, algorithme de recherche, machine learning et algorithme de statistique
+	poser le contexte
+	quelle est le problème ? 
+	quelle est la formalisastion ?
+	
+2 - Etat de l'art
+		Il existe plusieurs famille de méthode d'optimisation, citez les utres méthodes trouver 
+		préciser qu'il y a peu de méthodes implémenter.
+		concept de base
+		etc... voir Mémoire Ismael... 
+		
+		Solutions NoSql : présenter...
+		Plan d'expériences.
+		//Tuning -> 
+		//NoSql -> Hadoop (mécanisme...) (expliquer les notions utliser plus loin ex : partionnement)
+		//celle que j'utilise
+		//compréhension générale et leurs résultats
+		//comment ils ont formalisé.. : comment ils voient le probleme de config... (classifier, changer a la volé, redemarrage)
+		//quelle est l'espace math.
+		//tout ce que jai pas fait et que jai utilisé : état de l'art.
+		//YCSB
+3 - Choix de méthodes d'optimisations de base de données.
+	Méthodes : comment ai je sélectionner ? protocol expérimentale
+	Comment comparer les méthodes ? 
+		critères de comparaison... pourquoi?
+	Criètres de sélection (citation from paper)
+	Choix des critères de sélection (pourquoi)
+	
+4 - Expériences et résultats (analyse ?)
+	- paramètre de test
+	- workload choisi et pourquoi ? 
+	- comment jai monté mes experienes ?
+	- dans quelles conditions les méthodes sont les meilleurs ?
+	- quelle est leprotocol experimentale
+	- interpreter les résultats et etre critique 
+	- expliquer comment jai eu ses résultats... 
+	- que vaut les résultats ? oui non et pourquoi ?
+	- test de configuration
+	- benchmark
+	
+5 - Discussion (factultative diréctement dans résultats)
+  - YCSB : etre citique et dire que parfois il nous limite. (opensource, binding exxiste, et avantags,.. ref vers paper ycsb et site officiel citez des papers  où ils l'ont utlisé.) queries tres simples.
+	Dire si les résultats sont les memes que ceux dans les papers lu.
+	
+6 - Conclusion
+	- rappel de mon travail
+	- comment valorisre
+	- où utilisez de maniere concrete  (cette méthode dans tel cas..)
+	- dans la suite et ce serait bien
+
+
+		
+Analyse : remet en cause mon travail et les plus grandes hypothese prise au départ
+		
+décrire les méthodes, les résultats et ensuite l'état de lart.
+ car qd on aura fini méthode résultats.
+ 

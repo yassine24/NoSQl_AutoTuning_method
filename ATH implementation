@@ -1,0 +1,57 @@
+Utiliser l'API pour modifier les paramètres
+via UI : Advanced Configuration Snippet mais impossible pour créer le training set
+Utiliser les roles.. 
+Faire un teste : 
+utiliser update config avec tout les config dans un noeud 2 ou 3
+pour voir ce que ca va donner
+
+
+
+
+
+
+ATH :
+======
+
+Crée un model de perf en utilisant random forest qui est un ensemble d'alog.
+Il crée un training set S composé d'une config et de son résultat. [c1,c2,...;latence/débit]
+Il crée 50 configuration différentes et puis le donne a RF pour entrainer le modèle.
+
+ATH ne permet pas selon moi de changer les paramètres à la volée...
+"This time overhead seems long but it is a one-time cost and is
+well justified as we target long-running HBase applications"
+
+
+
+Pour créer training set S :
+	- prendre 50 configurations différentes et leurs donnée des valeurs aléatoires à chaque run du workloads read only par exemple
+	l'éxécuter seul rien d autre en parralèlle.
+	
+- 50 config initiales 
+	- ensuite 50suivantes avec des valeurs aléatoirement choisie
+	jusqu'à 200 ou 600.
+ 
+
+
+Ath reprend 23 paramètre et leur valeur par défaut meme le range dans table2.
+
+
+Comment procéder ?
+===================
+
+1) Réussir à lancer YCSB avec un workload read-only
+
+
+2) Prendre le template hbase-site.xml 
+   Insérer les 23 param et les valeurs par défaut. (c'est déjà le cas)
+   écrire un script qui change automatiquement les valeurs des 23 params 
+   et qui leur donne une valeur aléatoire selon le range.
+   créer un fichier properties ou autre où il y aurait le range de chaque param
+
+3) Pour chacune des 50 configurations lancer le wkdls et récupérer latence et débit
+   lancer entre 200 et 600 fois hbase avec de nouvelles configuration pour créer un training set 	
+
+
+
+
+
