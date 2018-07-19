@@ -1,0 +1,25 @@
+Regionserver :
+    "hbase.hregion.memstore.flush.size":(4,32)
+    "hbase.hstore.compactionThreshold":(4,20)
+    "hbase.regionserver.maxlogs":(16,48)
+    "hbase.regionserver.handler.count":(20,80)
+    "regionserver.global.memstore.upperLimit" : (0.10,0.60)
+    "regionserver.global.memstore.lowerLimit": (0.10,0.60)
+    "hfile.block.cache.size":(0.10,0.60)
+
+
+Non trouvé
+"hbase.rs.cacheblocksonwrite"
+"hbase.storescanner.parallel.seek.threads"
+"hbase.storescanner.parallel.seek.enable"
+"hbase.regionserver.hlog.blocksize"
+"hbase.client.max.perregion.tasks"
+"hbase.client.max.perserver.tasks"
+"hbase.ipc.server.callqueue.handler.factor"
+"hbase.ipc.server.callqueue.read.ratio"
+"hbase.ipc.server.callqueue.scan.ratio"
+"io.storefile.bloom.block.size"
+"ycsb.client.threads"
+"hfile.index.block.max.size"
+"hfile.block.bloom.cacheonwrite"
+"hfile.block.index.cacheonwrite"
