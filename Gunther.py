@@ -62,9 +62,7 @@ class GuntherGA:
             parent2 = self.l[2]
 
         for c in p:
-            print(c)
             if parent1 == (c['spd']**-1):
-                print(c)
                 parent1=c
             if parent2 == (c['spd']**-1):
                 parent2=c
@@ -93,12 +91,9 @@ class GuntherGA:
         return p1, p2
 
     def mutate(self,child1,child2):
-        print(child1)
-        print(child2)
         if np.random.rand() < self.mutate_rate:
             pf = p.ParametersFound
             for key, valuep in pf.items():
-                print(key)
                 tmp = utils.generate_random_parameters(valuep)
                 tmp2 = utils.generate_random_parameters(valuep)
                 while 'hfile_block_cache_size' == key and tmp >= 0.40:
@@ -126,17 +121,18 @@ class GuntherGA:
         S_best = max(self.fitness_result)
         C_best = p[self.fitness_result.index(S_best)]
 
-        # for j in range(0,n): #GENERATION NEXT POP
-        #     for i in range(0,M/2):
-        #         parent1, parent2 = self.select(p)
-        #         child1,child2 = self.crossover(parent1,parent2)
-        #         child1,child2 = self.mutate(child1,child2)
-        #         child1 = self.fitness(child1)
-        #         child2 = self.fitness(child2)
-        #         p = self.update(child1,child2)
-        #         C_best = max(self.fitness_result)
-        #
-        # return C_best
+        for j in range(0,n): #GENERATION NEXT POP
+            for i in range(0,M/2):
+                parent1, parent2 = self.select(p)
+                child1,child2 = self.crossover(parent1,parent2)
+                child1,child2 = self.mutate(child1,child2)
+                child1 = self.fitnessC(child1)
+                child2 = self.fitnessC(child2)
+                p.append(self.update(child1,child2))
+                S_best = max(self.fitness_result)
+                C_best = p[self.fitness_result.index(S_best)]
+
+        return C_best
 
 
 
@@ -156,4 +152,3 @@ if __name__ == '__main__':
 
     ga.traditional_GA(ga.config,5)
 
-    print(ga.select(ga.config))
