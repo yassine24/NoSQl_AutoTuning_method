@@ -12,10 +12,10 @@ multi = {"hbase.hregion.memstore.flush.size":16777216,
          "hbase.regionserver.java.heapsize":536870912
          }
 
+
 def create_file_features(filename,data):
-    with open(filename, 'w') as outfile:
-        json.dump(data, outfile)
-        outfile.write('\n')
+    with open(filename, 'w+') as outfile:
+        outfile.write(data + '\n')
 
 
 def generate_random_parameters(value):
@@ -27,20 +27,6 @@ def generate_random_parameters(value):
         tmp = r.choice(value)
 
     return tmp
-
-
-def read_xml_to_array(filename):
-    tree = ET.parse(filename)
-    root = tree.getroot()
-    myArray = []
-    for i in range(0, 21):
-        # para_name = root[i][0].text
-        para_value = root[i][1].text
-        if para_value != 'False' and para_value != 'True':
-            para_value = float(para_value)
-        myArray.append(para_value)
-
-    return myArray
 
 
 def xml_parser(i):
@@ -70,6 +56,20 @@ def xml_parser(i):
     return v
 
 
+def read_xml_to_array(filename):
+    tree = ET.parse(filename)
+    root = tree.getroot()
+    myArray = []
+    for i in range(0, 21):
+        # para_name = root[i][0].text
+        para_value = root[i][1].text
+        if para_value != 'False' and para_value != 'True':
+            para_value = float(para_value)
+        myArray.append(para_value)
+
+    return myArray
+
+
 def extract_metrics(filename):
     latency = []
     filepath = filename
@@ -87,7 +87,6 @@ def extract_metrics(filename):
 
             if cnt > 13:
                 if  'AverageLatency(us)' in line.strip() :
-                    print(line.strip())
                     latency.append(float(line.strip()[30:]))
                 # print("Line {}: {}".format(cnt, line.strip()))
 
@@ -103,28 +102,29 @@ def generate_conf(start,n):
     return c
 
 
-def add_metrics_to_features(c,i):
-    metrics = extract_metrics("metrics/features"+str(i)+".txt")
-    latency = list(c)
-    throughtput = c
-    throughtput.insert(0, metrics[0])
-    latency.insert(0, metrics[1])
-    return throughtput, latency
+def create_file_metrics(begin,end):
+    for i in range(begin,end):
+        metrics = extract_metrics("features"+str(i)+".txt")
+        create_file_features('speedup.txt', str(metrics[0]))
+        create_file_features('latencies.txt',str(metrics[1]))
+
+
+def create_file_array_config(begin,end):
+    f = open('config.txt', 'w+')
+    for i in range(begin,end):
+        c = read_xml_to_array("hbase_param_file/hbase-site" + str(i) + ".xml")
+        # json.dump(c , f)
+        for v in c:
+            f.write(str(v)+",")
+        f.write('\n')
+    f.close()
 
 
 if __name__ == '__main__':
     #generer les conf randomly
     # c = generate_conf(1,3)
-
-    data = {}
-    data['metrics'] = []
-    for i in range(1,11):
-        c = read_xml_to_array("hbase_param_file/hbase-site"+str(i)+".xml")
-        throughtput, latency = add_metrics_to_features(c,i)
-        data['metrics'].append(throughtput)
-        data['metrics'].append(latency)
-
-    create_file_features('training_set.json',data)
+    create_file_array_config(1,11)
+    # create_file_metrics(1,3)
 
     # dans ATH il disent prendre 95 95 percentile latency pour la latence car
     # la latence est diff entre les operation... mais que prendre ? jai pris la moyenne des 2

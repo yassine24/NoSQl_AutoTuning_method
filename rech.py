@@ -62,7 +62,7 @@ def generate_param():
     for key, valuep in P.items():
         tmp = generate_random_parameters(valuep)
 
-        while 'hfile.block.cache.size' == key and tmp > 0.40:
+        while 'hfile_block_cache_size' == key and tmp > 0.40:
             tmp = generate_random_parameters(valuep)
 
         if multi.get(key):
