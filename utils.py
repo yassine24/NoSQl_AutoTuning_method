@@ -1,11 +1,13 @@
 from cm_api.api_client import ApiResource
 import properties as p
-import random  as r
+import random as r
+import numpy as np
 import subprocess
 import json
-
+import re
 
 cm_host = "insilicodb.ulb.ac.be"
+
 api = ApiResource(cm_host, username="ylakbeich", password="yassine")
 multi = {"hbase_hregion_memstore_flush_size":16777216,
          "hfile_index_block_max_size":65536,
@@ -77,16 +79,18 @@ def update_param(param):
 
     nn = None
     for r in hbase.get_all_roles():
-        # print r
         if r.type == 'REGIONSERVER':
             nn = r
 
     nn.update_config(param)
-
+    # !!!!!!! restart all or not ?
     cmd = cdh5.restart(restart_only_stale_services=True, redeploy_client_configuration=True)
     return cmd.wait(70)
 
 
+
+def rec(s):
+   return re.findall("\d+\.*\d+", s)
 
 def extract_metrics(filename):
     latency = []
@@ -96,45 +100,38 @@ def extract_metrics(filename):
         cnt = 1
         while line:
             if cnt == 2:
-                throughput = line.strip()[32:]
-                throughput = float(throughput)
-                # print(throughput)
-                # print("Line {}: {}".format(cnt, line.strip()))
-            if cnt == 13:
-                latency.append(float(line.strip()[28:]))
+                t = rec(line)
+                throughput = float(t[0])
 
-            if cnt > 13:
-                if  'AverageLatency(us)' in line.strip() :
-                    latency.append(float(line.strip()[30:]))
-                # print("Line {}: {}".format(cnt, line.strip()))
+            if '95thPercentileLatency(us), ' in line.strip() and 'CLEANUP' not in line.strip() :
+                l = rec(line)
+                latency.append(float(l[1]))
 
             line = fp.readline()
             cnt += 1
+
     avglatency = np.average(latency)
     return throughput, avglatency
 
 
-def exec_ycsb(i):
-    ycsb_load = "bin/ycsb load hbase12 -P workloads/workloadb -cp /HBASE-HOME-DIR/conf -p table=usertable -p columnfamily=family"
-    ycsb_run = "bin/ycsb run hbase12 -P workloads/workloadb -cp /HBASE-HOME-DIR/conf -p table=usertable -p columnfamily=family > ../gunther/child"+str(i)+".txt"
 
-    subprocess.call(ycsb_load, shell=True, cwd='YCSB')
-    subprocess.call(ycsb_run, shell=True, cwd='YCSB')
-    metrics = extract_metrics("child"+str(i)+".txt")
+def exec_ycsb(i,wkld):
+    ycsb_load = "bin/ycsb load hbase12 -P workloads/workload"+wkld+" -cp /HBASE-HOME-DIR/conf -p table=usertable -p columnfamily=family"
+    ycsb_run = "bin/ycsb run hbase12 -P workloads/workload"+wkld+" -cp /HBASE-HOME-DIR/conf -p table=usertable -p columnfamily=family > ../metrics/metricWkld-"+wkld+"-"+str(i)+".txt"
+
+    subprocess.call(ycsb_load, shell=True, cwd='../YCSB')
+    subprocess.call(ycsb_run, shell=True, cwd='../YCSB')
+
+    metrics = extract_metrics("metricWkld-"+wkld+'-'+str(i)+".txt")
     return metrics
 
 
-def create_file_features(filename,data):
-    with open(filename, 'w+') as outfile:
-        outfile.write(data + '\n')
 
-
-def create_config_file(begin, end):
+def create_config_file(filname,begin, end):
     conf = []
     for i in range(begin,end):
         p = generate_param()
         conf.append(p)
-    filname = "confGunther.txt"
     f = open(filname, 'w+')
     json.dump(conf,f)
     f.close()
@@ -153,19 +150,24 @@ def read_gunther(filename):
 
 
 if __name__ == '__main__':
-    filname = "confGunther0.txt"
-    create_config_file(0,5)
+    workload = ['a','b','c','e','f']
+    filename = "config.txt"
+    create_config_file(filename,0,5)
     cpt = 0
     latencies = []
     speedup = []
-    conf = read_gunther(filname)
+    conf = read_gunther(filename)
     for c in conf:
        update_param(c)
-       exec_ycsb(cpt)
-       cpt = cpt+1
-       spd, ltc = extract_metrics("../gunther/child"+str(cpt)+".txt")
-       speedup.append(spd)
-       latencies.append(ltc)
+       #une boucle pour chaque workload et donner en param la lettre du wklds
+       for wk in range(0,5):
+           exec_ycsb(cpt,workload[wk])
+           cpt = cpt+1
+           spd, ltc = extract_metrics("features/feature"+str(cpt)+".txt")
+           speedup.append(spd)
+           latencies.append(ltc)
 
-    write_metric('speedupG.txt',speedup)
-    write_metric('latenciesG.txt',latencies)
+    #ATTENTION METTRE APPEND (A+) POUR MODE OPEN FILE... CREER DES FICHIER SPD ET LTC POUR CHAQUE WKLDS.
+    #OU AVOIR 5 TABLEAU ET PUIS FAIRE 5 DUMP SINON VA FALLOIR MODIFIER L ECRITURE ET LOUVERTURE DES FICHIERS
+       write_metric('speedup.txt',speedup)
+       write_metric('latenciesG.txt',latencies)
