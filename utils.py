@@ -64,7 +64,7 @@ def generate_param():
     for key, valuep in P.items():
         tmp = generate_random_parameters(valuep)
 
-        while 'hfile_block_cache_size' == key and tmp > 0.40:
+        while 'hfile_block_cache_size' == key and tmp >= 0.40:
             tmp = generate_random_parameters(valuep)
 
         if multi.get(key):
@@ -122,7 +122,7 @@ def exec_ycsb(i,wkld):
     subprocess.call(ycsb_load, shell=True, cwd='../YCSB')
     subprocess.call(ycsb_run, shell=True, cwd='../YCSB')
 
-    metrics = extract_metrics("metricWkld-"+wkld+'-'+str(i)+".txt")
+    metrics = extract_metrics("metricWkld-"+wkld+"-"+str(i)+".txt")
     return metrics
 
 
@@ -142,32 +142,60 @@ def write_metric(filename, data):
         json.dump(data,out)
     out.close()
 
-def read_gunther(filename):
+def read_config(filename):
     with open(filename,'r') as fp:
         config = json.load(fp)
     fp.close()
     return config
 
 
-if __name__ == '__main__':
-    workload = ['a','b','c','e','f']
+def test():
+    NB_FEATURES = 5
+    workload = ['a', 'b', 'c', 'e', 'f']
     filename = "config.txt"
-    create_config_file(filename,0,5)
+    speedup = [{'a': []}, {'b': []}, {'c': []}, {'e': []}, {'f': []}]
+    latencies = [{'a': []}, {'b': []}, {'c': []}, {'e': []}, {'f': []}]
+
+    create_config_file(filename, 0, NB_FEATURES)
     cpt = 0
     latencies = []
     speedup = []
-    conf = read_gunther(filename)
+    conf = read_config(filename)
     for c in conf:
-       update_param(c)
-       #une boucle pour chaque workload et donner en param la lettre du wklds
-       for wk in range(0,5):
-           exec_ycsb(cpt,workload[wk])
-           cpt = cpt+1
-           spd, ltc = extract_metrics("features/feature"+str(cpt)+".txt")
-           speedup.append(spd)
-           latencies.append(ltc)
+        update_param(c)
+        # une boucle pour chaque workload et donner en param la lettre du wklds
+        for wk in range(0, 5):
+            w = workload[wk]
+            spd, ltc = exec_ycsb(cpt, w)
+            cpt = cpt + 1
+            # spd, ltc = extract_metrics("features/metricWkld-"+"-"+str(cpt)+".txt")
+            speedup[w].append(spd)
+            latencies[w].append(ltc)
 
-    #ATTENTION METTRE APPEND (A+) POUR MODE OPEN FILE... CREER DES FICHIER SPD ET LTC POUR CHAQUE WKLDS.
-    #OU AVOIR 5 TABLEAU ET PUIS FAIRE 5 DUMP SINON VA FALLOIR MODIFIER L ECRITURE ET LOUVERTURE DES FICHIERS
-       write_metric('speedup.txt',speedup)
-       write_metric('latenciesG.txt',latencies)
+    # ATTENTION METTRE APPEND (A+) POUR MODE OPEN FILE... CREER DES FICHIER SPD ET LTC POUR CHAQUE WKLDS.
+    # OU AVOIR 5 TABLEAU ET PUIS FAIRE 5 DUMP SINON VA FALLOIR MODIFIER L ECRITURE ET LOUVERTURE DES FICHIERS
+    # FAIIT A TESTER
+    for i in range(0, 5):
+        write_metric('speedup' + workload[0] + '.txt', speedup[i])
+        write_metric('latencies' + workload[0] + '.txt', latencies[i])
+
+if __name__ == '__main__':
+    NB_FEATURES = 5
+    filename = "config.txt"
+
+    create_config_file(filename, 0, NB_FEATURES)
+    cpt = 0
+    latencies = []
+    speedup = []
+    conf = read_config(filename)
+    for c in conf:
+        update_param(c)
+        # une boucle pour chaque workload et donner en param la lettre du wklds
+        spd, ltc = exec_ycsb(cpt, w)
+        cpt = cpt + 1
+        # spd, ltc = extract_metrics("features/metricWkld-"+"-"+str(cpt)+".txt")
+        speedup.append(spd)
+        latencies.append(ltc)
+
+    write_metric('speedup.txt', speedup)
+    write_metric('latencies.txt', latencies)
