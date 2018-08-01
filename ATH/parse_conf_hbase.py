@@ -3,7 +3,6 @@ from lxml import etree
 import random  as r
 import properties as p
 import numpy as np
-import json
 
 
 multi = {"hbase.hregion.memstore.flush.size":16777216,

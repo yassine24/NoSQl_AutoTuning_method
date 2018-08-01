@@ -1,69 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b1d3871-0350-4de0-bba4-8dc5cfd38915" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/groupe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/cloudera_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9b1d3871-0350-4de0-bba4-8dc5cfd38915" name="Default" comment="pret a générer pour tester">
+      <change afterPath="$PROJECT_DIR$/ATH/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gunther/Gunther.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gunther/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ATH implementation" beforeDir="false" afterPath="$PROJECT_DIR$/memoire/ATH implementation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gunther.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/essai.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATH/essaiRF.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/groupe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/hbase-site.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parse_conf_hbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/parse_conf_hbase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_conf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/p.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parse_conf_hbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/ATH/parse_conf_hbase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/properties.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-2135550012">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="13" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="13" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="550" />
+          <entry key="dummy" value="7" />
+          <entry key="py" value="1495" />
+          <entry key="txt" value="110" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="117" />
+          <entry key="Python" value="2045" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="parse_conf_hbase.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+            <state relative-caret-position="266">
+              <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
               <folding>
-                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
+                <marker date="1533134327363" expanded="true" signature="3862:5035" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hbase-site7.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/hbase-site7.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ATH/parse_conf_hbase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="3024">
+              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hbase-site10.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/hbase-site10.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hbase-site6.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/hbase-site6.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="properties.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/properties.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="692">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -84,11 +115,32 @@
       <find>regionserver.global.memstore.</find>
       <find>é</find>
       <find>hbase.ipc.server.callqueue.read.ratio</find>
+      <find>9663676416</find>
+      <find>heapsize</find>
+      <find>block.Size</find>
+      <find>size</find>
+      <find>max.size</find>
+      <find>threads</find>
+      <find>rs.ca</find>
       <find>hbase.regionserver.hlog.blocksize</find>
+      <find>.</find>
+      <find>436207616</find>
+      <find>12</find>
+      <find>352321536</find>
+      <find>0.24</find>
+      <find>71</find>
+      <find>67108864</find>
+      <find>hbase.regionserver.global.memstore.size</find>
+      <find>spd</find>
+      <find>print</find>
+      <find>del</find>
+      <find>create_file_features</find>
+      <find>create_config_file</find>
     </findStrings>
     <replaceStrings>
       <replace>:</replace>
       <replace>e</replace>
+      <replace>_</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,16 +152,49 @@
         <option value="$PROJECT_DIR$/ath_implementation.py" />
         <option value="$PROJECT_DIR$/venv/cloudera_client.py" />
         <option value="$PROJECT_DIR$/groupe" />
-        <option value="$PROJECT_DIR$/properties.py" />
         <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/training_set.json" />
         <option value="$PROJECT_DIR$/param.xml" />
         <option value="$PROJECT_DIR$/hbase-site.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site1.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site2.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site3.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site4.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site5.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site8.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site9.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site10.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site11.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site12.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site13.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site14.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site15.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site16.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site17.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site18.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site19.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site20.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site6.xml" />
+        <option value="$PROJECT_DIR$/features/hbase-site7.xml" />
+        <option value="$PROJECT_DIR$/throughtputs.txt" />
+        <option value="$PROJECT_DIR$/speedup.txt" />
+        <option value="$PROJECT_DIR$/latencies.txt" />
+        <option value="$PROJECT_DIR$/essai.py" />
+        <option value="$PROJECT_DIR$/p.py" />
+        <option value="$PROJECT_DIR$/config.txt" />
+        <option value="$PROJECT_DIR$/bug/Gunther.py" />
+        <option value="$PROJECT_DIR$/Gunther.py" />
         <option value="$PROJECT_DIR$/parse_conf_hbase.py" />
+        <option value="$PROJECT_DIR$/rech.py" />
+        <option value="$PROJECT_DIR$/gunther/Gunther.py" />
+        <option value="$PROJECT_DIR$/properties.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
     <option name="y" value="32" />
     <option name="width" value="960" />
     <option name="height" value="1048" />
@@ -120,6 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,13 +216,12 @@
             <path>
               <item name="NoSQl_AutoTuning_method" type="b2602c69:ProjectViewProjectNode" />
               <item name="NoSQl_AutoTuning_method" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="ATH" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -147,10 +232,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ATH" />
+      <recent name="$PROJECT_DIR$/gunther" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/memoire" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bug" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -166,7 +254,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="Gunther" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gunther/Gunther.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="essai" type="PythonConfigurationType" factoryName="Python">
+      <module name="ATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ATH/essaiRF.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="parse_conf_hbase" type="PythonConfigurationType" factoryName="Python">
       <module name="ATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -179,12 +309,71 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parse_conf_hbase.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ATH/parse_conf_hbase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
+    <configuration name="rech" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.parse_conf_hbase" />
+      <item itemvalue="Python.essai" />
+      <item itemvalue="Python.Gunther" />
+      <item itemvalue="Python.rech" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Gunther" />
+        <item itemvalue="Python.rech" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -204,29 +393,85 @@
       <option name="project" value="LOCAL" />
       <updated>1531750513887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="methode generation ok&#10;déjà générer 20observations&#10;methode pour créer trainingset fini">
+      <created>1531987409560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531987409560</updated>
+    </task>
+    <task id="LOCAL-00003" summary="génération training_set operationnel">
+      <created>1531992552173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531992552173</updated>
+    </task>
+    <task id="LOCAL-00004" summary="random forest debut">
+      <created>1532003337475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532003337475</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gunther implementation">
+      <created>1532433658918</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1532433658918</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gunther presque fini">
+      <created>1532451015727</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1532451015727</updated>
+    </task>
+    <task id="LOCAL-00007" summary="bug dans crossover">
+      <created>1532451189453</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1532451189453</updated>
+    </task>
+    <task id="LOCAL-00008" summary="PREPARATION CREER 200 TRAINING SET&#10;GESTION PLUSIEURS WKDS PRESQUE OK">
+      <created>1532712806086</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532712806086</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pret a générer pour tester">
+      <created>1533134387203</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533134387203</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13900635" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32847533" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.29484305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19133192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3295964" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32887402" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39910313" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5005285" side_tool="true" weight="0.29932734" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32887402" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3277592" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49947146" weight="0.29877368" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -234,321 +479,270 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="training set quasi ok&#10;je devrais copier coller le code sur le serveur pour récup les résultats" />
-    <option name="LAST_COMMIT_MESSAGE" value="training set quasi ok&#10;je devrais copier coller le code sur le serveur pour récup les résultats" />
+    <MESSAGE value="methode generation ok&#10;déjà générer 20observations&#10;methode pour créer trainingset fini" />
+    <MESSAGE value="génération training_set operationnel" />
+    <MESSAGE value="random forest debut" />
+    <MESSAGE value="gunther implementation" />
+    <MESSAGE value="gunther presque fini" />
+    <MESSAGE value="bug dans crossover" />
+    <MESSAGE value="PREPARATION CREER 200 TRAINING SET&#10;GESTION PLUSIEURS WKDS PRESQUE OK" />
+    <MESSAGE value="pret a générer pour tester" />
+    <option name="LAST_COMMIT_MESSAGE" value="pret a générer pour tester" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site5.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site8.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site9.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+        <state>
+          <caret column="10" lean-forward="true" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site10.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="528">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site20.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site19.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site18.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="528">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site17.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site16.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="528">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site15.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="528">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site14.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site13.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site12.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="10" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site11.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="27" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site7.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site6.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/../ATH/venv/local/lib/python2.7/site-packages/sklearn/datasets/samples_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="598">
+          <caret line="522" column="13" selection-start-line="522" selection-start-column="13" selection-end-line="522" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/training_set.json" />
+    <entry file="file://$PROJECT_DIR$/throughtput_set.json" />
+    <entry file="file://$PROJECT_DIR$/features2.txt" />
+    <entry file="file://$PROJECT_DIR$/output.txt" />
+    <entry file="file:///usr/lib/python2.7/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        <state relative-caret-position="-371">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/output.json" />
+    <entry file="file://$PROJECT_DIR$/p.json" />
+    <entry file="file://$PROJECT_DIR$/test.json" />
+    <entry file="file://$PROJECT_DIR$/hbase-site.xml" />
+    <entry file="file://$PROJECT_DIR$/new_conf.xml" />
+    <entry file="file://$PROJECT_DIR$/test.xml" />
+    <entry file="file://$PROJECT_DIR$/config1.txt.npy" />
+    <entry file="file://$PROJECT_DIR$/cxonfig1.txt" />
+    <entry file="file://$PROJECT_DIR$/config1.txt" />
+    <entry file="file://$PROJECT_DIR$/ATH/latencies.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$PROJECT_DIR$/hbase_param_file/hbase-site1.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="480">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
+    <entry file="file://$PROJECT_DIR$/ATH/speedup.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/2109186787/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        <state relative-caret-position="523">
+          <caret line="379" column="4" selection-start-line="379" selection-start-column="4" selection-end-line="379" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/properties.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cfg" />
     <entry file="file:///usr/lib/python2.7/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        <state relative-caret-position="188">
+          <caret line="239" column="8" selection-start-line="239" selection-start-column="8" selection-end-line="239" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ath_implementation.py" />
-    <entry file="file:///usr/lib/python2.7/xml/etree/ElementTree.py">
+    <entry file="file://$PROJECT_DIR$/../ATH/venv/local/lib/python2.7/site-packages/cm_api/http_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="197">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memoire/ATH implementation">
+    <entry file="file://$PROJECT_DIR$/bug/Gunther.py" />
+    <entry file="file://$PROJECT_DIR$/gunther/confGunther.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.xml">
+    <entry file="file://$PROJECT_DIR$/confGunther0.txt" />
+    <entry file="file://$PROJECT_DIR$/p.py" />
+    <entry file="file://$PROJECT_DIR$/ATH/param.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="44" column="10" selection-start-line="44" selection-start-column="10" selection-end-line="44" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATH/essaiRF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gunther/Gunther.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ATH/features1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml4" />
-    <entry file="file://$PROJECT_DIR$/../ATH/venv/local/lib/python2.7/site-packages/xmltodict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="329" selection-start-line="329" selection-end-line="329" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new_conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="59" selection-start-line="1" selection-start-column="59" selection-end-line="1" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/param.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/cloudera_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/sre_parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="147" column="8" selection-start-line="147" selection-start-column="8" selection-end-line="147" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/training_set.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hbase-site.xml">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="66" selection-start-line="62" selection-end-line="66" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/groupe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/hbase-site0.xml" />
     <entry file="file://$PROJECT_DIR$/properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="692">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/hbase-site6.xml">
+    <entry file="file://$PROJECT_DIR$/ATH/parse_conf_hbase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="21" />
+        <state relative-caret-position="3024">
+          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/hbase-site7.xml">
+    <entry file="file://$PROJECT_DIR$/ATH/config.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="216">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/hbase-site10.xml">
+    <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parse_conf_hbase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+        <state relative-caret-position="266">
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1533134327363" expanded="true" signature="3862:5035" ph="..." />
           </folding>
         </state>
       </provider>
